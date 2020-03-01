@@ -17,6 +17,10 @@
   "bin": {
     "atomic-hint": "bin/hint.js"
   },
+  "files": [
+    "bin/",
+    "dist/"
+  ],
   "repository": {
     "url": "https://github.com/alesvojta/atomic-hint",
     "type": "git"
