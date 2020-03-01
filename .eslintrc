@@ -1,0 +1,37 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["node_modules/", "dist/", "bin/"],
+    "rules": {
+        "eqeqeq": "error",
+        "keyword-spacing": "error",
+        "no-var": "error",
+        "object-shorthand": ["warn", "always"],
+        "prefer-const": "error",
+        "semi": ["error", "never"],
+        "@typescript-eslint/member-delimiter-style": [
+            "error",
+            {
+                "multiline": {
+                    "delimiter": "none"
+                },
+                "singleline": {
+                    "delimiter": "semi"
+                }
+            }
+        ]
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        // kep at the end
+        "plugin:prettier/recommended"
+    ]
+}
