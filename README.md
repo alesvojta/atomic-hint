@@ -6,3 +6,28 @@ This work is based on great tool created by [Daniel Tonon](https://github.com/Da
 
 This tool is basically a simple quiz that scores each category based on your answers. It then recommends the highest scoring category to you.
 
+## Installation:
+```shell script
+yarn add -g @avojta/atomic-hint
+```
+
+### Usage:
+```shell script
+atomic-hint
+```
+
+Example output:
+```
+? Will the component only ever be used once per page? Yes
+? Do you expect to use the component in multiple different contexts? Yes
+? Does the component consist of only a single element? Yes
+? Does the component contain a list of repeating components? Yes
+? Is the component an item in a list of components? Yes
+? Is the component large and complex? Yes
+? Are there any atom components embedded into the component? Yes
+? Are there any molecule components embedded into the component? Yes
+? Is or will the component ever be embedded inside a molecule component? Yes
+? Is or will the component ever be embedded inside an organism component? Yes
+? What element is the outer wrapper for the component? section
+Atom: 15; Molecule: 17; Organism: 23
+```
