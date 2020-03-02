@@ -1,4 +1,4 @@
-import { Score } from './scoreReducer'
+import { Score } from '../index/shared/scoreReducer'
 
 export type TResult = (v: boolean) => Score
 const result = (yes: Score, no: Score): TResult => (value: boolean): Score => (value ? yes : no)

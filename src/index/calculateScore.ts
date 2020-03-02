@@ -1,5 +1,5 @@
 import { Answers } from 'inquirer'
-import { Score, scoreReducer } from '../shared/scoreReducer'
+import { Score, scoreReducer } from './shared/scoreReducer'
 import { questionsMap } from '../shared/questions'
 
 const initialScore: Score = { o: 0, m: 0, a: 0 }
