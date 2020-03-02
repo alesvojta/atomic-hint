@@ -58,22 +58,22 @@ exports.questions = [
         message: 'Is the component large and complex?'
     },
     {
-        type: 'switch',
+        type: 'confirm',
         name: 'hasAtoms',
         message: 'Are there any atom components embedded into the component?'
     },
     {
-        type: 'switch',
+        type: 'confirm',
         name: 'hasMolecules',
         message: 'Are there any molecule components embedded into the component?'
     },
     {
-        type: 'switch',
+        type: 'confirm',
         name: 'embedInMolecule',
         message: 'Is or will the component ever be embedded inside a molecule component?'
     },
     {
-        type: 'switch',
+        type: 'confirm',
         name: 'embedInOrganism',
         message: 'Is or will the component ever be embedded inside an organism component?'
     },
