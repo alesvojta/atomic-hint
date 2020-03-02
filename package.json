@@ -1,7 +1,7 @@
 {
   "name": "@avojta/atomic-hint",
   "description": "A tool for helping you decide what Atomic Design category components belong to.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
