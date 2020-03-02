@@ -5,11 +5,11 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf lib",
     "watch": "tsc -w",
     "validate": "npm-run-all tsc eslint",
     "eslint": "eslint src/**/*.ts",
-    "tsc": "tsc src/*.ts --noEmit",
+    "tsc": "tsc --noEmit",
     "destiny": "destiny src/**/*",
     "release": "standard-version",
     "test": "echo \"Error: no test specified\""
@@ -19,7 +19,7 @@
   },
   "files": [
     "bin/",
-    "dist/"
+    "lib/"
   ],
   "repository": {
     "url": "https://github.com/alesvojta/atomic-hint",

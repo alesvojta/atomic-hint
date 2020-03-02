@@ -1,3 +1,3 @@
 #! /usr/bin/env node
-const hint = require('../dist/index')
+const hint = require('../lib/index')
 hint.default()
