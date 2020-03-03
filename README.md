@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/%40avojta%2Fatomic-hint.svg)](https://badge.fury.io/js/%40avojta%2Fatomic-hint)
 [![file structure: destiny](https://img.shields.io/badge/file%20structure-destiny-7a49ff?style=flat)](https://github.com/benawad/destiny)
 
-# Atomic Categorizer
+# Atomic Hint
 
 This work is based on great tool created by [Daniel Tonon](https://github.com/Dan503/) which you can try it out here: https://dan503.github.io/Atomic-Categorizer/
 
