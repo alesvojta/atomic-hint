@@ -7,12 +7,13 @@
     "build": "tsc",
     "prebuild": "rimraf lib",
     "watch": "tsc -w",
-    "validate": "npm-run-all tsc eslint",
+    "validate": "run-s tsc eslint",
     "eslint": "eslint src/**/*.ts",
     "tsc": "tsc --noEmit",
     "destiny": "destiny src",
-    "release": "standard-version",
-    "test": "echo \"Error: no test specified\""
+    "release": "run-s validate standard-version",
+    "test": "echo \"Error: no test specified\"",
+    "prepublish": "run-s validate build"
   },
   "bin": {
     "atomic-hint": "bin/hint.js"
