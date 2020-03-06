@@ -1,12 +1,13 @@
 import { Answers } from 'inquirer'
-import { Score, scoreReducer } from './shared/scoreReducer'
+import { scoreReducer } from './calculateScore/scoreReducer'
 import { questionsMap } from '../shared/questions'
+import { TScore } from './shared/types'
 
-const initialScore: Score = { o: 0, m: 0, a: 0 }
+const initialScore: TScore = { o: 0, m: 0, a: 0 }
 
-export function calculateScore(answers: Answers): Score {
+export function calculateScore(answers: Answers): TScore {
     const scores = Object.keys(answers).map((k: string) => {
-        const values = questionsMap[k] as (k: boolean | string) => Score
+        const values = questionsMap[k] as (k: boolean | string) => TScore
         return values(answers[k])
     })
     return scores.reduce(scoreReducer, initialScore)

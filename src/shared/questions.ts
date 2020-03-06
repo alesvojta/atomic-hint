@@ -1,9 +1,7 @@
-import { Score } from '../index/shared/scoreReducer'
+import { TScore, TQuestionMap, TWrapper, TWrapperElements } from '../index/shared/types'
 
-export type TResult = (v: boolean) => Score
-const result = (yes: Score, no: Score): TResult => (value: boolean): Score => (value ? yes : no)
+const result = (yes: TScore, no: TScore) => (value: boolean): TScore => (value ? yes : no)
 
-type TWrapperElements = { [element: string]: Score }
 export const wrapperElements: TWrapperElements = {
     section: { o: 3, m: 2, a: 0 },
     article: { o: 2, m: 3, a: 0 },
@@ -16,10 +14,8 @@ export const wrapperElements: TWrapperElements = {
     other: { o: 0, m: 0, a: 0 }
 }
 
-export type TWrapper = (v: string) => Score
 const wrapper: TWrapper = (index: string) => wrapperElements[index]
 
-export type TQuestionMap = { [key: string]: TResult | TWrapper }
 export const questionsMap: TQuestionMap = {
     alone: result({ o: 4, m: 1, a: 0 }, { o: 0, m: 2, a: 3 }),
     contexts: result({ o: 0, m: 2, a: 3 }, { o: 3, m: 2, a: 0 }),
