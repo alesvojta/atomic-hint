@@ -11,7 +11,8 @@
     "eslint": "eslint src/**/*.ts",
     "tsc": "tsc --noEmit",
     "destiny": "destiny src",
-    "release": "run-s validate standard-version",
+    "release": "standard-version",
+    "prerelease": "run-s validate",
     "test": "echo \"Error: no test specified\"",
     "prepublish": "run-s validate build"
   },
