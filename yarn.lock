@@ -909,10 +909,10 @@ define-properties@^1.1.2, define-properties@^1.1.3:
   dependencies:
     object-keys "^1.0.12"
 
-destiny@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/destiny/-/destiny-0.3.1.tgz#10073c7df16cfad47a1d38c6e788674ebaf2f9e5"
-  integrity sha512-izpBsuHpsMrgvkC0VFS0W1gcZnpgD+q6oQ5Y6SRkB7XpgWkwJMryV1zP2BHUXMalrvUOsG5V+gPzgvAUMIupGw==
+destiny@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/destiny/-/destiny-0.4.0.tgz#02eb9d1fe3a0c44f524cefec43367dd28093aee9"
+  integrity sha512-SvUrYHVRWx6atCQIb7tldatbXhSj5oZ98GJEvkVIRiPhitwmoQHpDcajEFyqj2H66WIvShEo9o4xFGtGb0lJyw==
   dependencies:
     "@babel/runtime" "^7.8.4"
     chalk "^3.0.0"
