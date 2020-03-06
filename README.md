@@ -29,5 +29,5 @@ Example output:
 ? Is or will the component ever be embedded inside a molecule component? Yes
 ? Is or will the component ever be embedded inside an organism component? Yes
 ? What element is the outer wrapper for the component? section
-Atom: 15; Molecule: 17; Organism: 23
+Atom: 15; Molecule: 19; Organism: 21
 ```
